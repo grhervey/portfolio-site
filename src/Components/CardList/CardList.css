@@ -1,5 +1,5 @@
 .cardList--container {
-    padding-top:10vh;
+    padding:10vh 0;
     flex: 0 0 50%;
     display:flex;
     flex-flow: row wrap;

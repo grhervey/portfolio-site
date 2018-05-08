@@ -1,13 +1,35 @@
 .footer {
-    border: 0 1px solid black;
     background: #eeeeee;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
-.footer {
-  display: flex;
-  padding: 1rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+.footer--content {
+    flex:0 0 70%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+}
+.footer--buttons {
+    flex: 0 0 30%;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.footer--contacts {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: right;
+}
+.footer--contacts p {
+    text-decoration: none;
+    margin: 0;
+}.footer--icons {
+    margin:.2rem;
 }
 
 

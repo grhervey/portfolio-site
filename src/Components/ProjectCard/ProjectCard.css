@@ -1,20 +1,21 @@
 .ProjectCard {
-    margin: 1rem;
+    margin: .4rem;
     display: flex;
     cursor: pointer;
+    border: 1px solid #202020;
     transition: all .1s ease-out;
 }
 .ProjectCard--big {
-    flex:0 3 70%;
+    flex:0 0 70%;
     flex-flow: row nowrap;
 }
 .ProjectCard--medium {
-    flex:0 2 40%;
+    flex:0 0 34.6%;
     flex-flow: column nowrap;
 
 }
 .ProjectCard--small {
-    flex:0 0 30%;
+    flex:0 0 34.6%;
     flex-flow: column-reverse nowrap;
 }
 .ProjectCard--mobile {
@@ -26,13 +27,36 @@
     box-shadow: -6px 8px 10px 6px #aaaaaa;
 }
 
-.ProjectCard .info {
-    flex: 0 0 35%;
+.ProjectCard .info--container {
+    flex: 0 0 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202020;
+}
+.info {
+    flex: 0 0 80%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-around;
     align-items: center;
-    background: #202020;
     color:white;
 }
-
+.info--name {
+    flex:0 0 20%;
+}
+.info--text {
+    flex: 0 0 20%;
+}
+.info--tools {
+    flex: 0 0 60%;
+}
+.info--buttons{
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #e8e8e8;
+    border-radius: 5px;
+    padding: .2rem;
+}

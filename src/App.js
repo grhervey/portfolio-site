@@ -16,7 +16,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-      fetch('https://portfolio-grhervey.herokuapp.com/projects')
+    fetch('https://portfolio-grhervey.herokuapp.com/projects')
       .then(response => response.json())
       .then(data => this.setState({projects: data}))
   }
@@ -43,7 +43,7 @@ class App extends Component {
                   >
                   <p
                     className='about'
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    >   Computer Science graduate persueing a career in full stack development that can utilize my knowledge of JavaScript, Python, or C#. I love using Python for data analysis, playing around with recomendation systems and prediction algorithms. I enjoy building applicaitons using JavaScript because it is the the leading technology for consistency between web, mobile, and server side while supporting the open source community with frameworks such as React and React native.
                   </p>
 
                     <CardList
@@ -51,11 +51,11 @@ class App extends Component {
                       />
 
 
+
+              </div>
                 <Footer
                   className='footer'
                   />
-
-              </div>
               </StickyContainer>
             </div>
     );

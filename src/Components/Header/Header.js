@@ -8,11 +8,12 @@ class Header extends Component {
     const {style} = this.props;
     return (
       <div className='Navigation' style={style}>
-        <h1 className='logo'>GH</h1>
-        <div className='contact'>
-            <p>Graham.Hervey@gmail.com</p>
-            <Icon href='https://github.com/grhervey' image='github'/>
-            <Icon href='https://www.linkedin.com/in/grhervey/' image='linkedIn'/>
+        <div className='content'>
+          <h1 className='logo'>Graham Hervey</h1>
+          <div className='contact'>
+              <Icon href='https://github.com/grhervey' image='github'/>
+              <Icon href='https://www.linkedin.com/in/grhervey/' image='linkedIn'/>
+          </div>
         </div>
       </div>
     );

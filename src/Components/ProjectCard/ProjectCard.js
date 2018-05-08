@@ -17,6 +17,7 @@ class ProjectCard extends Component {
         link: PropTypes.string,
         git: PropTypes.string,
         text: PropTypes.string,
+        tools: PropTypes.string,
     }
 
     static defaultProps = {
@@ -26,6 +27,7 @@ class ProjectCard extends Component {
         link: 'link',
         git: 'git',
         text: ' ',
+        tools: ' ',
     }
     _getClassnames = () => {
         const { type, id } = this.props;
@@ -38,15 +40,18 @@ class ProjectCard extends Component {
     };
 
      render() {
-        const {name, image,link,git,text} = this.props;
+        const {name, image, link, git, text, tools} = this.props;
         return(
             <div className={this._getClassnames()}>
-                <div className='info'>
-                    <h2>{name}</h2>
-                    <p>{text}</p>
-                    <div className='buttons'>
-                        <Button label='Open'/>
-                        <Icon image='github'/>
+                <div className='info--container'>
+                    <div className='info'>
+                        <h2 className='info--name'>{name}</h2>
+                        <p className='info--text'>{text}</p>
+                        <p className='info--tools'>tools used: {tools}</p>
+                        <div className='info--buttons'>
+                            <Button source={link}value='Open'/>
+                            <Icon href={git} image='github'/>
+                        </div>
                     </div>
                 </div>
                 <div className='image'>
