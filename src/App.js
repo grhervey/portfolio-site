@@ -43,7 +43,7 @@ class App extends Component {
                   >
                   <p
                     className='about'
-                    >   Computer Science graduate persueing a career in full stack development that can utilize my knowledge of JavaScript, Python, or C#. I love using Python for data analysis, playing around with recomendation systems and prediction algorithms. I enjoy building applicaitons using JavaScript because it is the the leading technology for consistency between web, mobile, and server side while supporting the open source community with frameworks such as React and React native.
+                    >   Between rock climbing and finishing my computer science degree I have learned how to over come road blocks and that is what is important in being a good developer. I love using Python for data analysis, playing around with recomendation systems and prediction algorithms. I enjoy building applicaitons using JavaScript because it is the the leading technology for consistency between web, mobile, and server side while supporting the open source community with frameworks such as React and React native.
                   </p>
 
                     <CardList
