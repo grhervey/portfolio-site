@@ -10,9 +10,9 @@ class Header extends Component {
       <div className='Navigation' style={style}>
         <h1 className='logo'>GH</h1>
         <div className='contact'>
-            <Icon image='email'/>
-            <Icon href='github.com/grhervey' image='github'/>
-            <Icon href='linkedin.com/in/grhervey' image='linkedIn'/>
+            <p>Graham.Hervey@gmail.com</p>
+            <Icon href='https://github.com/grhervey' image='github'/>
+            <Icon href='https://www.linkedin.com/in/grhervey/' image='linkedIn'/>
         </div>
       </div>
     );

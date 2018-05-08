@@ -31,13 +31,13 @@ class Button extends Component{
     render() {
         const {value, icon, source} = this.props;
         return(
-               <button
+               <a href={source}><button
                 className={this._getClassnames()}
-                src={source}
+                href={source}
                >
                {icon && <div className='Button__icon'>{icon}</div>}
                 <div className='Button__value'>{value}</div>
-               </button>
+               </button></a>
             );
     }
 }

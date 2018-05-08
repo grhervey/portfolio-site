@@ -9,9 +9,9 @@ class IntroCard extends Component {
       <div className='introCard'>
         <div className='introText'>
             <h1>Graham Hervey</h1>
-            <h3>Develop Anything and Everything</h3>
+            <h3>Developer: JavaScript, Python, C#</h3>
             <div style={{display: 'flex', flexFlow: 'row wrap', justifyContent: 'center'}}>
-                <Button source='github.com/grhervey' value='This Sites Code'/>
+                <Button source='https://github.com/grhervey/portfolio-site' value="This Site's Code"/>
             </div>
         </div>
       </div>
