@@ -16,7 +16,7 @@ class App extends Component {
     }
   }
   componentDidMount() {
-      fetch('http://localhost:3000/projects')
+      fetch('https://portfolio-grhervey.herokuapp.com/projects')
       .then(response => response.json())
       .then(data => this.setState({projects: data}))
   }
@@ -28,15 +28,7 @@ class App extends Component {
             :
             <div className="App">
               <IntroCard />
-
-                <div
-                  className='page-content'
-                  >
-                  <p
-                    className='about'
-                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                  </p>
-                  <StickyContainer
+                <StickyContainer
                     className='sticky--container'
                     >
                     <Sticky>
@@ -46,6 +38,14 @@ class App extends Component {
                         />
                       )}
                     </Sticky>
+                <div
+                  className='page-content'
+                  >
+                  <p
+                    className='about'
+                    >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </p>
+
                     <CardList
                       projects = {projects}
                       />
@@ -54,8 +54,9 @@ class App extends Component {
                 <Footer
                   className='footer'
                   />
-              </StickyContainer>
+
               </div>
+              </StickyContainer>
             </div>
     );
   }
