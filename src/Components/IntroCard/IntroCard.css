@@ -1,0 +1,16 @@
+.introCard {
+    height: 90vh;
+    background-image: url('./redsky.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introText {
+    text-align: center;
+    padding-bottom: 2rem;
+}

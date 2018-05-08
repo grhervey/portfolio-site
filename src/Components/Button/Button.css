@@ -1,0 +1,24 @@
+/*Styles for Button.js*/
+@use postcss-nested;
+@use postcss-cssnext;
+
+.Button {
+    width: 120px;
+    height: 45px;
+    outline: 0;
+    border:0;
+    border-radius: 5px;
+    color: white;
+    background: #424242;
+    cursor: pointer;
+
+    &--Big {
+        width: 240px;
+        height:60px;
+    }
+
+    &--hovered {
+        background: #fefefe;
+    }
+
+}

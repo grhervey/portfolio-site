@@ -1,0 +1,14 @@
+.footer {
+    border: 0 1px solid black;
+    background: #eeeeee;
+}
+.footer {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+

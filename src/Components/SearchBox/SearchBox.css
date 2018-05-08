@@ -1,0 +1,13 @@
+.searchBox input {
+    background: #eeeeee;
+    float: right;
+    padding: 6px;
+    border: 1px solid black;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+.searchBox {
+    margin: 1rem;
+}

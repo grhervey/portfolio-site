@@ -1,0 +1,41 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.App > * {
+    flex: 0 0 auto;
+}
+
+.App li {
+  list-style-type: none;
+}
+
+
+.page-content{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-content .about{
+  padding-top:10vh;
+  max-width: 70vw;
+  height: 70vh;
+  font-size: 3rem;
+}
+
+
+.App .searchableList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-bottom: 1rem;
+}
+
+
+
+
+

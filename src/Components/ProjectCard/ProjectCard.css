@@ -1,0 +1,38 @@
+.ProjectCard {
+    margin: 1rem;
+    display: flex;
+    cursor: pointer;
+    transition: all .1s ease-out;
+}
+.ProjectCard--big {
+    flex:0 3 70%;
+    flex-flow: row nowrap;
+}
+.ProjectCard--medium {
+    flex:0 2 40%;
+    flex-flow: column nowrap;
+
+}
+.ProjectCard--small {
+    flex:0 0 30%;
+    flex-flow: column-reverse nowrap;
+}
+.ProjectCard--mobile {
+    flex: 0 0 95%;
+    flex-flow: column-reverse nowrap;
+}
+
+.ProjectCard:hover {
+    box-shadow: -6px 8px 10px 6px #aaaaaa;
+}
+
+.ProjectCard .info {
+    flex: 0 0 35%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+    background: #202020;
+    color:white;
+}
+
